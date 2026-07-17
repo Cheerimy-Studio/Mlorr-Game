@@ -1,19 +1,22 @@
-# Mlorr.online
+# Mlorr.online - Game 部分
 
 实时多人花园对战 / 收集类游戏，浏览器内直接游玩。
 
-- **官网 / 开源页**：https://github.com/Cheerimy-Studio/Mlorr.online  
-- **版本**：`1.0.0`（见 `version.json`）
+备注：
 
----
+1. 本项目基于 [Gardn] 项目开发，并遵循 AGPL-3.0 开源协议。根据该协议要求，任何基于本项目的衍生作品，在分发时必须公开其完整源代码，且需同步托管至 GitHub 等公开代码仓库。
+2. 本项目是 Mlorr 总项目下的一个子模块。Mlorr.online 是一个项目聚合平台，汇集了多个相互独立、各自遵循不同开源许可协议的子项目。
+3. 本项目是 Mlorr.online 的核心游戏服务处理器，负责管理全部游戏引擎逻辑及游戏内容渲染，但不包含任何在线服务功能。所有在线服务相关功能，请移步 Mlorr-Online 项目。
+4. Mlorr-Online 服务与 Gardn 项目无任何关联，其仅作为 Mlorr-Game 项目的在线服务 API 提供方。如需使用在线服务相关功能，请访问对应项目页面获取详细信息。
+4. 在线服务是 Mlorr-Game 的一项可选扩展功能，以子插件形式独立于主项目存在。
 
 ## 功能概览
 
 - 多地图世界（花园、沙漠、海洋、丛林、冥界、世界等）  
 - 花瓣装备、背包、图鉴与掉落系统  
-- 局内聊天、小地图、Boss 条等交互  
-- Web 管理后台（刷怪、稀有度区域、玩家与运维管理）  
-- 客户端版本检测（版本过旧时提示 **Ctrl+F5** 强制刷新缓存）
+- 合成、小地图、Boss 条等交互
+- 客户端版本检测
+- 聊天、商店、交易平台、Web 管理后台（已废弃）（请移步至项目 Mlorr-Online）
 
 ---
 
@@ -33,17 +36,16 @@ npm install --omit=dev
 node start.js
 ```
 
-首次启动会交互式创建管理员账号，并自动生成：
-
-- `data/admin.json` — 管理员凭据  
-- `data/server-config.json` — 模式、管理后台路径等  
+首次启动会可选择连接至 **Mlorr-Online** 在线服务 API，并自动生成部分凭据文件。
 
 启动成功后访问：
 
 | 用途 | 地址示例 |
 |------|----------|
 | 游戏页面 | `http://127.0.0.1:25882/` |
-| 管理后台 | `http://127.0.0.1:25882/<你设置的后台路径>` |
+| 管理后台 | `已废弃` |
+
+**管理后台已废弃，如需使用，请移步至 Mlorr-Online 项目。**
 
 自定义端口：
 
@@ -82,6 +84,8 @@ GARDN_PORT=25882 node start.js
 └── README.md
 ```
 
+**本目录结构已废弃，请阅读实际目录结构。**
+
 > 本项目基于 Gardn 开发，部分素材来自 M28，遵循 AGPL 3.0 协议。
 
 ---
@@ -100,7 +104,7 @@ GARDN_PORT=25882 node start.js
 
 ## 社区
 
-- GitHub：https://github.com/Cheerimy-Studio/Mlorr.online  
+- GitHub：https://github.com/Cheerimy-Studio/Mlorr-Game  
 - QQ 群：741017717
 
 ---
@@ -117,4 +121,4 @@ GARDN_PORT=25882 node start.js
 
 [预览入口](http://mlorr.online)
 
-*Mlorr.online V1.0*
+*Mlorr.online*
