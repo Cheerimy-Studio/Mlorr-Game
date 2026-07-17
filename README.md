@@ -66,30 +66,6 @@ GARDN_PORT=25882 node start.js
 
 ---
 
-## 目录结构
-
-```
-.
-├── index.html           # 游戏入口（版本门 + 加载页）
-├── gardn-client.js      # 客户端胶水层（Release 压缩）
-├── gardn-client.wasm    # 客户端核心（WASM）
-├── gardn-server.js      # 服务端宿主 / API / WS
-├── gardn-server.wasm    # 服务端核心（WASM）
-├── admin.html           # 管理后台页面
-├── start.js             # 启动脚本（首次配置管理员）
-├── package.json         # Node 依赖（ws）
-├── version.json         # 版本元数据
-├── assets/              # 地图与贴图资源
-├── data/                # 运行时数据
-└── README.md
-```
-
-**本目录结构已废弃，请阅读实际目录结构。**
-
-> 本项目基于 Gardn 开发，部分素材来自 M28，遵循 AGPL 3.0 协议。
-
----
-
 ## 版本信息
 
 | 字段 | 值 |
@@ -109,16 +85,10 @@ GARDN_PORT=25882 node start.js
 
 ---
 
-## 许可证与免责
-
-- 以本仓库根目录 **LICENSE**（若有）为准；若无，权利默认归作者 / Cheerimy Studio 所有，未经许可不得声称「已获完整源码授权」。  
-- 本发行包按「现状」提供，作者不对部署安全、数据丢失或第三方滥用承担责任。  
-- 请合法合规运营，切勿将默认口令或后台路径暴露在公网而不更改。
-
----
-
 ## 项目预览
 
 [预览入口](http://mlorr.online)
+
+> 本项目基于 Gardn 开发，部分素材来自 M28，遵循 AGPL 3.0 协议。
 
 *Mlorr.online*
